@@ -13,13 +13,13 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 // Import modules
-import RSSFetcher from './fetchers/rss.cjs';
-import AIProcessor from './processors/ai.cjs';
-import BriefingFormatter from './formatters/briefing.cjs';
-import TelegramPublisher from './publishers/telegram.cjs';
-import EmailPublisher from './publishers/email.cjs';
-import SlackPublisher from './publishers/slack.cjs';
-import TaskScheduler from './scheduler/index.cjs';
+import RSSFetcher from './fetchers/rss.js';
+import AIProcessor from './processors/ai.js';
+import BriefingFormatter from './formatters/briefing.js';
+import TelegramPublisher from './publishers/telegram.js';
+import EmailPublisher from './publishers/email.js';
+import SlackPublisher from './publishers/slack.js';
+import TaskScheduler from './scheduler/index.js';
 import getDatabase from './db/index.js';
 
 class DailyBriefingSystem {

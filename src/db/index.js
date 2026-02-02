@@ -4,7 +4,7 @@
  * Database connection and queries
  */
 
-import Database from 'better-sqlite3';
+import SQLite3 from 'better-sqlite3';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
 
@@ -15,7 +15,7 @@ const DB_PATH = process.env.DATABASE_URL?.replace('sqlite:', '') || 'data/briefi
 
 class Database {
   constructor() {
-    this.db = new Database(DB_PATH);
+    this.db = new SQLite3(DB_PATH);
     this.db.pragma('journal_mode = WAL');
     this.db.pragma('foreign_keys = ON');
   }
