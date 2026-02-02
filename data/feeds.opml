@@ -1,25 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <opml version="2.0">
   <head>
-    <title>Hacker News Most Popular Blogs 2025</title>
+    <title>Daily Briefing - Tech Blogs</title>
+    <dateCreated>Fri, 2 Feb 2026 23:30:00 GMT</dateCreated>
   </head>
   <body>
-    <outline text="Blogs" title="Blogs">
-      <outline type="rss" text="simonwillison.net" title="simonwillison.net" xmlUrl="https://simonwillison.net/atom/everything/" htmlUrl="https://simonwillison.net"/>
-      <outline type="rss" text="mitchellh.com" title="mitchellh.com" xmlUrl="https://mitchellh.com/feed.xml" htmlUrl="https://mitchellh.com"/>
-      <outline type="rss" text="paulgraham.com" title="paulgraham.com" xmlUrl="http://www.aaronsw.com/2002/feeds/pgessays.rss" htmlUrl="https://paulgraham.com"/>
-      <outline type="rss" text="troyhunt.com" title="troyhunt.com" xmlUrl="https://www.troyhunt.com/rss/" htmlUrl="https://www.troyhunt.com"/>
-      <outline type="rss" text="gwern.net" title="gwern.net" xmlUrl="https://gwern.substack.com/feed" htmlUrl="https://gwern.net"/>
-      <outline type="rss" text="krebsonsecurity.com" title="krebsonsecurity.com" xmlUrl="https://krebsonsecurity.com/feed/" htmlUrl="https://krebsonsecurity.com"/>
-      <outline type="rss" text="daringfireball.net" title="daringfireball.net" xmlUrl="https://daringfireball.net/feeds/main" htmlUrl="https://daringfireball.net"/>
-      <outline type="rss" text="marginalia.nu" title="marginalia.nu" xmlUrl="https://marginallynavigable.com/index.xml" htmlUrl="https://marginallynavigable.com"/>
-      <outline type="rss" text="rachelbythebay.com" title="rachelbythebay.com" xmlUrl="https://rachelbythebay.com/w/atom.xml" htmlUrl="https://rachelbythebay.com"/>
-      <outline type="rss" text="antirez.com" title="antirez.com" xmlUrl="http://antirez.com/rss" htmlUrl="http://antirez.com"/>
-      <outline type="rss" text="matklad.github.io" title="matklad.github.io" xmlUrl="https://matklad.github.io/feed.xml" htmlUrl="https://matklad.github.io"/>
-      <outline type="rss" text="danluu.com" title="danluu.com" xmlUrl="https://danluu.com/feed.xml" htmlUrl="https://danluu.com"/>
-      <outline type="rss" text="jvns.ca" title="jvns.ca" xmlUrl="https://jvns.ca/atom.xml" htmlUrl="https://jvns.ca"/>
-      <outline type="rss" text="bitsaboutmoney.com" title="bitsaboutmoney.com" xmlUrl="https://bitsaboutmoney.com/feed/" htmlUrl="https://bitsaboutmoney.com"/>
-      <outline type="rss" text="patrickcollison.com" title="patrickcollison.com" xmlUrl="https://patrickcollison.com/feed.xml" htmlUrl="https://patrickcollison.com"/>
-    </outline>
+    <!-- AI & Machine Learning -->
+    <outline text="Andrej Karpathy" title="Andrej Karpathy" type="rss" xmlUrl="https://karpathy.github.io/feed.xml" htmlUrl="https://karpathy.github.io/"/>
+    <outline text="Sebastian Raschka" title="Sebastian Raschka" type="rss" xmlUrl="https://sebastianraschka.com/feed.xml" htmlUrl="https://sebastianraschka.com/"/>
+    
+    <!-- Tech Industry -->
+    <outline text="Paul Graham" title="Paul Graham" type="rss" xmlUrl="http://www.aaronsw.com/2002/feeds/pgessays.rss" htmlUrl="http://paulgraham.com/"/>
+    <outline text="Simon Willison" title="Simon Willison" type="rss" xmlUrl="https://simonwillison.net/atom/everything/" htmlUrl="https://simonwillison.net/"/>
+    <outline text="Gwern Branwen" title="Gwern Branwen" type="rss" xmlUrl="https://gwern.net/atom.xml" htmlUrl="https://gwern.net/"/>
+    <outline text="Mitchell Hashimoto" title="Mitchell Hashimoto" type="rss" xmlUrl="https://blog.hashicorp.com/feed.xml" htmlUrl="https://blog.hashicorp.com/"/>
+    
+    <!-- Security -->
+    <outline text="Troy Hunt" title="Troy Hunt" type="rss" xmlUrl="https://www.troyhunt.com/feed.aspx" htmlUrl="https://www.troyhunt.com/"/>
+    <outline text="Bruce Schneier" title="Bruce Schneier" type="rss" xmlUrl="https://www.schneier.com/blog/atom.xml" htmlUrl="https://www.schneier.com/"/>
+    
+    <!-- Development -->
+    <outline text="Dan Abramov" title="Dan Abramov" type="rss" xmlUrl="https://overreacted.io/atom.xml" htmlUrl="https://overreacted.io/"/>
+    <outline text="Kent C. Dodds" title="Kent C. Dodds" type="rss" xmlUrl="https://kentcdodds.com/blog/rss.xml" htmlUrl="https://kentcdodds.com/blog"/>
+    
+    <!-- Startups & Business -->
+    <outline text="Y Combinator" title="Y Combinator" type="rss" xmlUrl="https://news.ycombinator.com/rss" htmlUrl="https://news.ycombinator.com/"/>
+    <outline text="Naval" title="Naval" type="rss" xmlUrl="https://nav.al/feed" htmlUrl="https://nav.al/"/>
+    
+    <!-- Infrastructure -->
+    <outline text="The AWS Blog" title="The AWS Blog" type="rss" xmlUrl="https://aws.amazon.com/blogs/aws/feed/" htmlUrl="https://aws.amazon.com/blogs/aws/"/>
+    <outline text="Cloudflare Blog" title="Cloudflare Blog" type="rss" xmlUrl="https://blog.cloudflare.com/rss/" htmlUrl="https://blog.cloudflare.com/"/>
+    
+    <!-- Data & Analytics -->
+    <outline text="Stitch Fix Engineering" title="Stitch Fix Engineering" type="rss" xmlUrl="https://multithreaded.stitchfix.com/feed/" htmlUrl="https://multithreaded.stitchfix.com/"/>
+    <outline text="Uber Engineering" title="Uber Engineering" type="rss" xmlUrl="https://eng.uber.com/feed/" htmlUrl="https://eng.uber.com/"/>
+    
+    <!-- More can be added from: https://gist.github.com/emschwartz/e6d2bf860ccc367fe37ff953ba6de66b -->
   </body>
 </opml>

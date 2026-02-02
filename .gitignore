@@ -1,12 +1,39 @@
+# Dependencies
 node_modules/
-data/*.db
-data/*.db-journal
+package-lock.json
+
+# Environment
 .env
+.env.local
+
+# Database
+data/
+*.db
+*.db-shm
+*.db-wal
+
+# Logs
+logs/
 *.log
-.DS_Store
-coverage/
-dist/
+
+# IDE
 .vscode/
 .idea/
 *.swp
-*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build
+dist/
+build/
+
+# Test coverage
+coverage/
+.nyc_output/
+
+# Temporary
+tmp/
+temp/
