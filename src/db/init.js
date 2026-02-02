@@ -6,7 +6,8 @@
 
 import Database from 'better-sqlite3';
 import { fileURLToPath } from 'url';
-import { dirname, join } from 'path';
+import { dirname } from 'path';
+import { mkdirSync } from 'fs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -18,8 +19,6 @@ if (dbPath.startsWith('sqlite:')) {
 }
 
 // Ensure directory exists
-import { dirname, join } from 'path';
-import { mkdirSync } from 'fs';
 const dbDir = dirname(dbPath);
 if (dbDir && dbDir !== '.') {
   mkdirSync(dbDir, { recursive: true });
