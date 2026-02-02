@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0">
+  <head>
+    <title>Hacker News Most Popular Blogs 2025</title>
+  </head>
+  <body>
+    <outline text="Blogs" title="Blogs">
+      <outline type="rss" text="simonwillison.net" title="simonwillison.net" xmlUrl="https://simonwillison.net/atom/everything/" htmlUrl="https://simonwillison.net"/>
+      <outline type="rss" text="mitchellh.com" title="mitchellh.com" xmlUrl="https://mitchellh.com/feed.xml" htmlUrl="https://mitchellh.com"/>
+      <outline type="rss" text="paulgraham.com" title="paulgraham.com" xmlUrl="http://www.aaronsw.com/2002/feeds/pgessays.rss" htmlUrl="https://paulgraham.com"/>
+      <outline type="rss" text="troyhunt.com" title="troyhunt.com" xmlUrl="https://www.troyhunt.com/rss/" htmlUrl="https://www.troyhunt.com"/>
+      <outline type="rss" text="gwern.net" title="gwern.net" xmlUrl="https://gwern.substack.com/feed" htmlUrl="https://gwern.net"/>
+      <outline type="rss" text="krebsonsecurity.com" title="krebsonsecurity.com" xmlUrl="https://krebsonsecurity.com/feed/" htmlUrl="https://krebsonsecurity.com"/>
+      <outline type="rss" text="daringfireball.net" title="daringfireball.net" xmlUrl="https://daringfireball.net/feeds/main" htmlUrl="https://daringfireball.net"/>
+      <outline type="rss" text="marginalia.nu" title="marginalia.nu" xmlUrl="https://marginallynavigable.com/index.xml" htmlUrl="https://marginallynavigable.com"/>
+      <outline type="rss" text="rachelbythebay.com" title="rachelbythebay.com" xmlUrl="https://rachelbythebay.com/w/atom.xml" htmlUrl="https://rachelbythebay.com"/>
+      <outline type="rss" text="antirez.com" title="antirez.com" xmlUrl="http://antirez.com/rss" htmlUrl="http://antirez.com"/>
+      <outline type="rss" text="matklad.github.io" title="matklad.github.io" xmlUrl="https://matklad.github.io/feed.xml" htmlUrl="https://matklad.github.io"/>
+      <outline type="rss" text="danluu.com" title="danluu.com" xmlUrl="https://danluu.com/feed.xml" htmlUrl="https://danluu.com"/>
+      <outline type="rss" text="jvns.ca" title="jvns.ca" xmlUrl="https://jvns.ca/atom.xml" htmlUrl="https://jvns.ca"/>
+      <outline type="rss" text="bitsaboutmoney.com" title="bitsaboutmoney.com" xmlUrl="https://bitsaboutmoney.com/feed/" htmlUrl="https://bitsaboutmoney.com"/>
+      <outline type="rss" text="patrickcollison.com" title="patrickcollison.com" xmlUrl="https://patrickcollison.com/feed.xml" htmlUrl="https://patrickcollison.com"/>
+    </outline>
+  </body>
+</opml>
