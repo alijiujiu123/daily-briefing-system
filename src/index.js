@@ -20,7 +20,7 @@ import TelegramPublisher from './publishers/telegram.js';
 import EmailPublisher from './publishers/email.js';
 import SlackPublisher from './publishers/slack.js';
 import TaskScheduler from './scheduler/index.js';
-import getDatabase from './db/index.js';
+import { getDatabase } from './db/index.js';
 
 class DailyBriefingSystem {
   constructor() {
