@@ -7,15 +7,25 @@
 import SQLite3 from 'better-sqlite3';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
+import { mkdirSync } from 'fs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-const DB_PATH = process.env.DATABASE_URL?.replace('sqlite:', '') || 'data/briefing.db';
+let dbPath = process.env.DATABASE_URL || 'data/briefing.db';
+if (dbPath.startsWith('sqlite:')) {
+  dbPath = dbPath.replace('sqlite:', '');
+}
 
-class Database {
+// Ensure directory exists
+const dbDir = dirname(dbPath);
+if (dbDir && dbDir !== '.') {
+  mkdirSync(dbDir, { recursive: true });
+}
+
+class BriefingDatabase {
   constructor() {
-    this.db = new SQLite3(DB_PATH);
+    this.db = new SQLite3(dbPath);
     this.db.pragma('journal_mode = WAL');
     this.db.pragma('foreign_keys = ON');
   }
@@ -125,9 +135,9 @@ let dbInstance = null;
 
 export function getDatabase() {
   if (!dbInstance) {
-    dbInstance = new Database();
+    dbInstance = new BriefingDatabase();
   }
   return dbInstance;
 }
 
-export default Database;
+export default BriefingDatabase;

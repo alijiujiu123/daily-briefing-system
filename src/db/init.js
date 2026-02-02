@@ -11,11 +11,23 @@ import { dirname, join } from 'path';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-const DB_PATH = process.env.DATABASE_URL || 'sqlite:data/briefing.db';
+// Remove 'sqlite:' prefix if present
+let dbPath = process.env.DATABASE_URL || 'data/briefing.db';
+if (dbPath.startsWith('sqlite:')) {
+  dbPath = dbPath.replace('sqlite:', '');
+}
 
-console.log(`📦 Initializing database: ${DB_PATH}`);
+// Ensure directory exists
+import { dirname, join } from 'path';
+import { mkdirSync } from 'fs';
+const dbDir = dirname(dbPath);
+if (dbDir && dbDir !== '.') {
+  mkdirSync(dbDir, { recursive: true });
+}
 
-const db = new Database(DB_PATH);
+console.log(`📦 Initializing database: ${dbPath}`);
+
+const db = new Database(dbPath);
 
 // Enable foreign keys
 db.pragma('foreign_keys = ON');
