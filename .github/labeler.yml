@@ -1,0 +1,45 @@
+# Pull Request Labeler
+# Automatically labels PRs based on changed files
+
+"bug":
+  - changed-files:
+      - any-glob-to-any-file:
+          - "lib/**/*fix*"
+          - "tests/**/*fix*"
+
+"documentation":
+  - changed-files:
+      - any-glob-to-any-file:
+          - "**/*.md"
+          - "docs/**"
+
+"enhancement":
+  - changed-files:
+      - any-glob-to-any-file:
+          - "lib/**"
+          - "scripts/**"
+
+"dependencies":
+  - changed-files:
+      - any-glob-to-any-file:
+          - "package.json"
+          - "package-lock.json"
+
+"ci/cd":
+  - changed-files:
+      - any-glob-to-any-file:
+          - ".github/**"
+          - "Dockerfile"
+          - "docker-compose.yml"
+
+"testing":
+  - changed-files:
+      - any-glob-to-any-file:
+          - "tests/**"
+          - "**/*.test.*"
+
+"configuration":
+  - changed-files:
+      - any-glob-to-any-file:
+          - "config/**"
+          - "*.example.*"
